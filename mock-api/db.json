@@ -1,0 +1,523 @@
+{
+  "vehicles": [
+    {
+      "id": "V001",
+      "plateNumber": "ABC-1234",
+      "driverName": "Juan Dela Cruz",
+      "vehicleType": "Toyota Vios",
+      "color": "White",
+      "passType": "Student",
+      "passNumber": "S124",
+      "passCode": "S124",
+      "assignedArea": "P-1",
+      "assignedSlot": "P-1-01",
+      "status": "active"
+    },
+    {
+      "id": "V002",
+      "plateNumber": "XYZ-5678",
+      "driverName": "Maria Santos",
+      "vehicleType": "Honda City",
+      "color": "Silver",
+      "passType": "Employee",
+      "passNumber": "E123",
+      "passCode": "E123",
+      "assignedArea": "P-2",
+      "assignedSlot": "P-2-01",
+      "status": "active"
+    },
+    {
+      "id": "V003",
+      "plateNumber": "DEF-2345",
+      "driverName": "Carlo Mendoza",
+      "vehicleType": "Honda Civic",
+      "color": "Black",
+      "passType": "Student",
+      "passNumber": "S125",
+      "passCode": "S125",
+      "assignedArea": "P-3",
+      "assignedSlot": "P-3-01",
+      "status": "active"
+    },
+    {
+      "id": "V004",
+      "plateNumber": "GHI-3456",
+      "driverName": "Angela Reyes",
+      "vehicleType": "Toyota Wigo",
+      "color": "Red",
+      "passType": "Student",
+      "passNumber": "S126",
+      "passCode": "S126",
+      "assignedArea": "P-5",
+      "assignedSlot": "P-5-01",
+      "status": "active"
+    },
+    {
+      "id": "V005",
+      "plateNumber": "JKL-4567",
+      "driverName": "Mark Villanueva",
+      "vehicleType": "Mitsubishi Mirage",
+      "color": "Gray",
+      "passType": "Student",
+      "passNumber": "S127",
+      "passCode": "S127",
+      "assignedArea": "P-6",
+      "assignedSlot": "P-6-01",
+      "status": "active"
+    },
+    {
+      "id": "V006",
+      "plateNumber": "MNO-5678",
+      "driverName": "Patricia Garcia",
+      "vehicleType": "Toyota Innova",
+      "color": "White",
+      "passType": "Employee",
+      "passNumber": "E124",
+      "passCode": "E124",
+      "assignedArea": "P-7",
+      "assignedSlot": "P-7-01",
+      "status": "active"
+    },
+    {
+      "id": "V007",
+      "plateNumber": "PQR-6789",
+      "driverName": "Roberto Fernandez",
+      "vehicleType": "Honda Brio",
+      "color": "Blue",
+      "passType": "Employee",
+      "passNumber": "E125",
+      "passCode": "E125",
+      "assignedArea": "P-9",
+      "assignedSlot": "P-9-01",
+      "status": "active"
+    },
+    {
+      "id": "V008",
+      "plateNumber": "STU-7890",
+      "driverName": "Christine Lopez",
+      "vehicleType": "Suzuki Ertiga",
+      "color": "Silver",
+      "passType": "Employee",
+      "passNumber": "E126",
+      "passCode": "E126",
+      "assignedArea": "P-10",
+      "assignedSlot": "P-10-01",
+      "status": "active"
+    },
+    {
+      "id": "V009",
+      "plateNumber": "VWX-8901",
+      "driverName": "Antonio Ramos",
+      "vehicleType": "Toyota Fortuner",
+      "color": "Black",
+      "passType": "Parent",
+      "passNumber": "P001",
+      "passCode": "P001",
+      "assignedArea": "P-11",
+      "assignedSlot": "P-11-01",
+      "status": "active"
+    },
+    {
+      "id": "V010",
+      "plateNumber": "YZA-9012",
+      "driverName": "Elena Cruz",
+      "vehicleType": "Mitsubishi Xpander",
+      "color": "White",
+      "passType": "Parent",
+      "passNumber": "P002",
+      "passCode": "P002",
+      "assignedArea": "P-12",
+      "assignedSlot": "P-12-01",
+      "status": "active"
+    },
+    {
+      "id": "V011",
+      "plateNumber": "BCD-0123",
+      "driverName": "Miguel Torres",
+      "vehicleType": "Nissan Almera",
+      "color": "Gray",
+      "passType": "Parent",
+      "passNumber": "P003",
+      "passCode": "P003",
+      "assignedArea": "P-13",
+      "assignedSlot": "P-13-01",
+      "status": "active"
+    },
+    {
+      "id": "V012",
+      "plateNumber": "CDE-1235",
+      "driverName": "Daniel Flores",
+      "vehicleType": "Toyota Avanza",
+      "color": "White",
+      "passType": "Drop-off",
+      "passNumber": "101",
+      "passCode": "101",
+      "assignedArea": "None",
+      "assignedSlot": "None",
+      "status": "active"
+    },
+    {
+      "id": "V013",
+      "plateNumber": "EFG-2346",
+      "driverName": "Sofia Bautista",
+      "vehicleType": "Honda Mobilio",
+      "color": "Silver",
+      "passType": "Drop-off",
+      "passNumber": "102",
+      "passCode": "102",
+      "assignedArea": "None",
+      "assignedSlot": "None",
+      "status": "active"
+    },
+    {
+      "id": "V014",
+      "plateNumber": "HIJ-3457",
+      "driverName": "Gabriel Aquino",
+      "vehicleType": "Suzuki Swift",
+      "color": "Red",
+      "passType": "Drop-off",
+      "passNumber": "103",
+      "passCode": "103",
+      "assignedArea": "None",
+      "assignedSlot": "None",
+      "status": "active"
+    }
+  ],
+  "parkingAreas": [
+    {
+      "id": "P-1",
+      "name": "Parking Area P-1",
+      "totalSpaces": 23,
+      "occupiedSpaces": 8,
+      "availableSpaces": 15,
+      "lat": 10.71499,
+      "lng": 122.562928
+    },
+    {
+      "id": "P-2",
+      "name": "Parking Area P-2",
+      "totalSpaces": 22,
+      "occupiedSpaces": 17,
+      "availableSpaces": 5,
+      "lat": 10.714704,
+      "lng": 122.562402
+    },
+    {
+      "id": "P-3",
+      "name": "Parking Area P-3",
+      "totalSpaces": 61,
+      "occupiedSpaces": 40,
+      "availableSpaces": 21,
+      "lat": 10.713962,
+      "lng": 122.562156
+    },
+    {
+      "id": "P-4",
+      "name": "Parking Area P-4",
+      "totalSpaces": 25,
+      "occupiedSpaces": 25,
+      "availableSpaces": 0,
+      "lat": 10.713607,
+      "lng": 122.561554
+    },
+    {
+      "id": "P-5",
+      "name": "Parking Area P-5",
+      "totalSpaces": 15,
+      "occupiedSpaces": 7,
+      "availableSpaces": 8,
+      "lat": 10.713414,
+      "lng": 122.561385
+    },
+    {
+      "id": "P-6",
+      "name": "Parking Area P-6",
+      "totalSpaces": 19,
+      "occupiedSpaces": 14,
+      "availableSpaces": 5,
+      "lat": 10.713334,
+      "lng": 122.56131
+    },
+    {
+      "id": "P-7",
+      "name": "Parking Area P-7",
+      "totalSpaces": 14,
+      "occupiedSpaces": 5,
+      "availableSpaces": 9,
+      "lat": 10.713214,
+      "lng": 122.561425
+    },
+    {
+      "id": "P-8",
+      "name": "Parking Area P-8",
+      "totalSpaces": 18,
+      "occupiedSpaces": 18,
+      "availableSpaces": 0,
+      "lat": 10.713017,
+      "lng": 122.561067
+    },
+    {
+      "id": "P-9",
+      "name": "Parking Area P-9",
+      "totalSpaces": 10,
+      "occupiedSpaces": 4,
+      "availableSpaces": 6,
+      "lat": 10.713053,
+      "lng": 122.560716
+    },
+    {
+      "id": "P-10",
+      "name": "Parking Area P-10",
+      "totalSpaces": 11,
+      "occupiedSpaces": 9,
+      "availableSpaces": 2,
+      "lat": 10.712753,
+      "lng": 122.560659
+    },
+    {
+      "id": "P-11",
+      "name": "Parking Area P-11",
+      "totalSpaces": 20,
+      "occupiedSpaces": 13,
+      "availableSpaces": 7,
+      "lat": 10.713032,
+      "lng": 122.562006
+    },
+    {
+      "id": "P-12",
+      "name": "Parking Area P-12",
+      "totalSpaces": 6,
+      "occupiedSpaces": 3,
+      "availableSpaces": 3,
+      "lat": 10.712681,
+      "lng": 122.562346
+    },
+    {
+      "id": "P-13",
+      "name": "Parking Area P-13",
+      "totalSpaces": 15,
+      "occupiedSpaces": 11,
+      "availableSpaces": 4,
+      "lat": 10.713852,
+      "lng": 122.562124
+    },
+    {
+      "id": "P-14",
+      "name": "Parking Area P-14",
+      "totalSpaces": 19,
+      "occupiedSpaces": 15,
+      "availableSpaces": 4,
+      "lat": 10.713436,
+      "lng": 122.562613
+    },
+    {
+      "id": "P-15",
+      "name": "Parking Area P-15",
+      "totalSpaces": 25,
+      "occupiedSpaces": 20,
+      "availableSpaces": 5,
+      "lat": 10.713059,
+      "lng": 122.562863
+    },
+    {
+      "id": "P-16",
+      "name": "Parking Area P-16",
+      "totalSpaces": 8,
+      "occupiedSpaces": 5,
+      "availableSpaces": 3,
+      "lat": 10.713428,
+      "lng": 122.563576
+    },
+    {
+      "id": "P-17",
+      "name": "Parking Area P-17",
+      "totalSpaces": 26,
+      "occupiedSpaces": 18,
+      "availableSpaces": 8,
+      "lat": 10.7122,
+      "lng": 122.563963
+    },
+    {
+      "id": "P-18",
+      "name": "Parking Area P-18",
+      "totalSpaces": 30,
+      "occupiedSpaces": 21,
+      "availableSpaces": 9,
+      "lat": 10.713851,
+      "lng": 122.562661
+    }
+  ],
+  "parkingSlots": [
+    {
+      "id": "P-1-01",
+      "area": "P-1",
+      "slotNumber": "P-1-01",
+      "status": "occupied",
+      "vehicleId": "V001"
+    },
+    {
+      "id": "P-2-01",
+      "area": "P-2",
+      "slotNumber": "P-2-01",
+      "status": "occupied",
+      "vehicleId": "V002"
+    },
+    {
+      "id": "P-3-01",
+      "area": "P-3",
+      "slotNumber": "P-3-01",
+      "status": "occupied",
+      "vehicleId": "V003"
+    },
+    {
+      "id": "P-5-01",
+      "area": "P-5",
+      "slotNumber": "P-5-01",
+      "status": "occupied",
+      "vehicleId": "V004"
+    },
+    {
+      "id": "P-6-01",
+      "area": "P-6",
+      "slotNumber": "P-6-01",
+      "status": "occupied",
+      "vehicleId": "V005"
+    },
+    {
+      "id": "P-7-01",
+      "area": "P-7",
+      "slotNumber": "P-7-01",
+      "status": "occupied",
+      "vehicleId": "V006"
+    },
+    {
+      "id": "P-9-01",
+      "area": "P-9",
+      "slotNumber": "P-9-01",
+      "status": "occupied",
+      "vehicleId": "V007"
+    },
+    {
+      "id": "P-10-01",
+      "area": "P-10",
+      "slotNumber": "P-10-01",
+      "status": "occupied",
+      "vehicleId": "V008"
+    },
+    {
+      "id": "P-11-01",
+      "area": "P-11",
+      "slotNumber": "P-11-01",
+      "status": "occupied",
+      "vehicleId": "V009"
+    },
+    {
+      "id": "P-12-01",
+      "area": "P-12",
+      "slotNumber": "P-12-01",
+      "status": "occupied",
+      "vehicleId": "V010"
+    },
+    {
+      "id": "P-13-01",
+      "area": "P-13",
+      "slotNumber": "P-13-01",
+      "status": "occupied",
+      "vehicleId": "V011"
+    }
+  ],
+  "violations": [
+    {
+      "id": "INC-001",
+      "vehicleId": "V001",
+      "plateNumber": "ABC-1234",
+      "violationType": "Wrong Parking Area",
+      "assignedSlot": "P-1-01",
+      "detectedSlot": "P-1-02",
+      "status": "rejected",
+      "severity": "high",
+      "reviewedAt": "2026-11-26T12:00:08.867Z"
+    },
+    {
+      "id": "B9HDnaxE9ZA",
+      "vehicleId": "V001",
+      "plateNumber": "ABC-1234",
+      "driverName": "Juan Dela Cruz",
+      "violationType": "Wrong Parking Area",
+      "assignedSlot": "P-1-01",
+      "detectedSlot": "P-1-01",
+      "severity": "medium",
+      "description": "blablacuhu",
+      "status": "confirmed",
+      "reportedAt": "2026-11-26T11:02:52.311Z",
+      "photoName": "system_overview.png",
+      "reviewedAt": "2026-11-26T12:00:15.882Z"
+    },
+    {
+      "id": "M_2M0DkXuLw",
+      "vehicleId": "V008",
+      "plateNumber": "STU-7890",
+      "driverName": "Christine Lopez",
+      "violationType": "Wrong Parking Area",
+      "assignedSlot": "P-10-01",
+      "detectedSlot": "P-10-01",
+      "severity": "high",
+      "description": "idkk",
+      "status": "pending",
+      "reportedAt": "2026-11-26T11:27:48.881Z",
+      "photoName": "conceptual_framework.png"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "N001",
+      "title": "Parking Reminder",
+      "message": "Please park in your assigned parking area.",
+      "type": "reminder",
+      "status": "unread"
+    }
+  ],
+  "yellowPasses": [],
+  "outsideVehicles": [
+    {
+      "driverName": "Jian Yuan",
+      "plateNumber": "VBN-4567",
+      "vehicleType": "toyota vios",
+      "color": "black",
+      "purpose": "bisita lng",
+      "contactNumber": "0999999999",
+      "entryTime": "2026-11-26T12:20:02.381Z",
+      "exitTime": null,
+      "status": "Inside",
+      "registeredBy": "Security Personnel",
+      "id": "mVGvKe0UJy4"
+    }
+  ],
+  "entranceLogs": [
+    {
+      "vehicleId": "V001",
+      "plateNumber": "ABC-1234",
+      "driverName": "Juan Dela Cruz",
+      "vehicleType": "Toyota Vios",
+      "checkpoint": "Main Entrance",
+      "action": "Exit",
+      "timestamp": "2026-11-26T12:18:46.776Z",
+      "securityPersonnel": "Security Personnel",
+      "source": "Manual",
+      "id": "hW7OZdhVMBc"
+    },
+    {
+      "vehicleId": "mVGvKe0UJy4",
+      "plateNumber": "VBN-4567",
+      "driverName": "Jian Yuan",
+      "vehicleType": "toyota vios",
+      "checkpoint": "Main Entrance",
+      "action": "Entry",
+      "timestamp": "2026-11-26T12:20:02.381Z",
+      "securityPersonnel": "Security Personnel",
+      "source": "Manual Visitor Registration",
+      "id": "arn3mKRtW8g"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

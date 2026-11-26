@@ -1,0 +1,163 @@
+.report-page {
+  min-height: 100vh;
+  background: #f3f6fb;
+  padding: 35px 45px;
+  color: #172b55;
+  font-family: Arial, sans-serif;
+}
+
+.report-header {
+  margin-bottom: 30px;
+}
+
+.report-header > p {
+  color: #54709c;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.report-header h1 {
+  font-size: 29px;
+  margin-bottom: 8px;
+}
+
+.report-header > span {
+  color: #71819c;
+  font-size: 14px;
+}
+
+.report-container {
+  max-width: 850px;
+}
+
+.report-card {
+  background: white;
+  border: 1px solid #e1e8f2;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 3px 12px rgba(25, 48, 86, 0.03);
+}
+
+.report-title {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: #e58b25;
+  border-bottom: 1px solid #e8edf5;
+  padding-bottom: 22px;
+  margin-bottom: 25px;
+}
+
+.report-title h2 {
+  color: #172b55;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.report-title p {
+  color: #71819c;
+  font-size: 13px;
+}
+
+.report-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.report-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  flex: 1;
+}
+
+.report-field label {
+  font-size: 13px;
+  font-weight: bold;
+  color: #344b70;
+}
+
+.report-field input,
+.report-field select,
+.report-field textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d7e0ed;
+  border-radius: 9px;
+  outline: none;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #263b5d;
+  background: white;
+}
+
+.report-field input:focus,
+.report-field select:focus,
+.report-field textarea:focus {
+  border-color: #2863ed;
+  box-shadow: 0 0 0 3px rgba(40, 99, 237, 0.1);
+}
+
+.report-field textarea {
+  resize: vertical;
+}
+
+.report-field small {
+  color: #8290a7;
+  font-size: 12px;
+}
+
+.report-row {
+  display: flex;
+  gap: 18px;
+}
+
+.report-message {
+  padding: 13px;
+  border-radius: 9px;
+  background: #eaf1ff;
+  border: 1px solid #d2e0ff;
+  color: #2855a5;
+  font-size: 14px;
+}
+
+.submit-report-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border: none;
+  border-radius: 9px;
+  background: #2863ed;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-report-button:hover {
+  background: #1d50c8;
+}
+
+.submit-report-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+@media (max-width: 650px) {
+  .report-page {
+    padding: 22px 16px;
+  }
+
+  .report-card {
+    padding: 20px;
+  }
+
+  .report-row {
+    flex-direction: column;
+  }
+}

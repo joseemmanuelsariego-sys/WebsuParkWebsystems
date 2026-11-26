@@ -1,0 +1,472 @@
+.my-vehicle-page {
+  min-height: 100vh;
+  background: #f3f6fa;
+  color: #173d58;
+}
+
+.my-vehicle-header {
+  height: 75px;
+  background: white;
+  border-bottom: 1px solid #e5ebf0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+.vehicle-back,
+.vehicle-refresh {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  background: transparent;
+  border: none;
+  color: #2878a5;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.vehicle-refresh {
+  padding: 10px 15px;
+  border: 1px solid #dce6ee;
+  border-radius: 7px;
+}
+
+.vehicle-refresh:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.my-vehicle-content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 35px 30px;
+}
+
+.my-vehicle-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.vehicle-overline {
+  color: #2878a5;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.my-vehicle-title h1 {
+  font-size: 27px;
+  margin: 9px 0;
+}
+
+.my-vehicle-title p {
+  color: #8293a2;
+  font-size: 13px;
+}
+
+.vehicle-title-icon {
+  width: 65px;
+  height: 65px;
+  background: #e2f1f9;
+  color: #2878a5;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main vehicle card */
+.vehicle-main-card {
+  background: linear-gradient(115deg, #173d58, #2879a7);
+  border-radius: 13px;
+  padding: 30px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.vehicle-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vehicle-card-icon {
+  width: 85px;
+  height: 70px;
+  border-radius: 12px;
+  background: #ffffff20;
+  color: #b4e0f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vehicle-active-status {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 13px;
+  background: #ffffff20;
+  border-radius: 20px;
+  font-size: 11px;
+}
+
+.vehicle-card-info {
+  margin-top: 25px;
+}
+
+.vehicle-card-info > span {
+  font-size: 10px;
+  color: #b9dced;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+.vehicle-card-info h2 {
+  font-size: 25px;
+  margin: 9px 0 15px;
+}
+
+.vehicle-plate {
+  display: inline-block;
+  background: white;
+  color: #173d58;
+  padding: 12px 25px;
+  border-radius: 7px;
+  font-size: 19px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Section headings */
+.vehicle-details-section,
+.vehicle-pass-section,
+.vehicle-assignment-section {
+  margin-bottom: 30px;
+}
+
+.vehicle-section-heading {
+  margin-bottom: 17px;
+}
+
+.vehicle-section-heading h2 {
+  font-size: 18px;
+}
+
+.vehicle-section-heading p {
+  color: #8293a2;
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+/* Vehicle details */
+.vehicle-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.vehicle-info-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 21px;
+  background: white;
+  border: 1px solid #e7edf2;
+  border-radius: 10px;
+}
+
+.vehicle-info-card > svg {
+  color: #2878a5;
+  flex-shrink: 0;
+}
+
+.vehicle-info-card span,
+.vehicle-info-card strong {
+  display: block;
+}
+
+.vehicle-info-card span {
+  color: #8293a2;
+  font-size: 10px;
+  margin-bottom: 7px;
+}
+
+.vehicle-info-card strong {
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+/* Parking pass */
+.vehicle-pass-card {
+  background: white;
+  border: 1px solid #e7edf2;
+  border-radius: 11px;
+  padding: 24px;
+}
+
+.pass-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.pass-card-icon {
+  width: 47px;
+  height: 47px;
+  background: #e4f2fa;
+  color: #2878a5;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pass-card-heading span:first-child {
+  color: #8293a2;
+  font-size: 10px;
+}
+
+.pass-card-heading h3 {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.pass-status {
+  margin-left: auto;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.pass-active {
+  background: #e5f6ed;
+  color: #23965b;
+}
+
+.pass-inactive {
+  background: #fdecec;
+  color: #bd4444;
+}
+
+.pass-number-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #f3f7fa;
+  padding: 17px;
+  border-radius: 8px;
+  margin-top: 22px;
+}
+
+.pass-number-container span {
+  color: #8293a2;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.pass-number-container strong {
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+
+.pass-description {
+  color: #8293a2;
+  font-size: 11px;
+  line-height: 1.6;
+  margin-top: 17px;
+}
+
+/* Parking assignment */
+.vehicle-assignment-card {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  background: white;
+  border: 1px solid #e7edf2;
+  border-radius: 11px;
+  padding: 22px;
+}
+
+.assignment-info-icon {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  background: #e4f2fa;
+  color: #2878a5;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.assignment-info {
+  flex: 1;
+}
+
+.assignment-info > span {
+  font-size: 10px;
+  color: #8293a2;
+  letter-spacing: 1px;
+}
+
+.assignment-info h3 {
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+.assignment-info p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #8293a2;
+  font-size: 11px;
+}
+
+.view-assignment-button {
+  padding: 11px 15px;
+  border: none;
+  background: #2878a5;
+  color: white;
+  border-radius: 7px;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.view-assignment-button:hover {
+  background: #173d58;
+}
+
+/* Messages */
+.vehicle-message,
+.vehicle-empty {
+  background: white;
+  border-radius: 10px;
+  padding: 35px;
+  text-align: center;
+  color: #8293a2;
+  font-size: 13px;
+}
+
+.vehicle-empty svg {
+  color: #2878a5;
+  margin-bottom: 12px;
+}
+
+.vehicle-empty h2 {
+  color: #173d58;
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+
+.vehicle-empty p {
+  font-size: 12px;
+}
+
+.vehicle-error {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fdecec;
+  color: #bd3333;
+  padding: 18px;
+  border-radius: 9px;
+  font-size: 12px;
+}
+
+.vehicle-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 17px;
+  background: #fff8e9;
+  border: 1px solid #f2e5c6;
+  border-radius: 9px;
+  color: #a57928;
+}
+
+.vehicle-notice svg {
+  flex-shrink: 0;
+}
+
+.vehicle-notice p {
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.my-vehicle-footer {
+  text-align: center;
+  color: #9aa9b5;
+  font-size: 10px;
+  padding: 30px 10px 15px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .my-vehicle-content {
+    padding: 25px 15px;
+  }
+
+  .my-vehicle-title h1 {
+    font-size: 22px;
+  }
+
+  .my-vehicle-title p {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  .vehicle-title-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .vehicle-main-card {
+    padding: 22px;
+  }
+
+  .vehicle-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vehicle-assignment-card {
+    flex-wrap: wrap;
+  }
+
+  .view-assignment-button {
+    width: 100%;
+  }
+
+  .pass-card-heading {
+    flex-wrap: wrap;
+  }
+
+  .pass-status {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .my-vehicle-header {
+    padding: 0 12px;
+  }
+
+  .vehicle-back,
+  .vehicle-refresh {
+    font-size: 11px;
+  }
+
+  .vehicle-card-info h2 {
+    font-size: 21px;
+  }
+
+  .vehicle-plate {
+    font-size: 16px;
+  }
+}

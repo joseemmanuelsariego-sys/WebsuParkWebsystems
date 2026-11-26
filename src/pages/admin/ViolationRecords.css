@@ -1,0 +1,708 @@
+/* =========================================
+   VIOLATION MANAGEMENT PAGE LAYOUT
+========================================= */
+
+.violation-management-layout {
+  width: 100%;
+  min-height: 100vh;
+  background: #f3f6fb;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.violation-management-main {
+  width: calc(100% - 260px);
+  min-width: 0;
+  min-height: 100vh;
+  margin-left: 260px;
+  padding: 0;
+  box-sizing: border-box;
+  background: #f3f6fb;
+}
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.violation-management-header {
+  width: 100%;
+  min-height: 130px;
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5ebf2;
+  box-sizing: border-box;
+}
+
+.violation-management-header h1 {
+  margin: 5px 0 8px;
+  color: #173858;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.violation-management-header p {
+  color: #8191a6;
+  font-size: 14px;
+}
+
+.violation-management-header .violation-page-subtitle {
+  color: #2563b8;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* =========================================
+   REFRESH BUTTON
+========================================= */
+
+.violation-refresh-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  height: 43px;
+  padding: 0 17px;
+  border: none;
+  border-radius: 8px;
+  background: #2563c5;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.violation-refresh-button:hover {
+  background: #194fa8;
+}
+
+.violation-refresh-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =========================================
+   NOTIFICATION MESSAGE
+========================================= */
+
+.violation-notice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 25px 40px 0;
+  padding: 13px 16px;
+  background: #eaf3ff;
+  border: 1px solid #c9def8;
+  border-radius: 8px;
+  color: #24558b;
+  font-size: 13px;
+}
+
+.violation-notice button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* =========================================
+   SUMMARY CARDS
+========================================= */
+
+.violation-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin: 30px 40px;
+}
+
+.violation-summary-card {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 22px 18px;
+  background: #ffffff;
+  border: 1px solid #e5ebf2;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(20, 48, 78, 0.04);
+}
+
+.summary-icon {
+  width: 47px;
+  height: 47px;
+  min-width: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+}
+
+.total-icon {
+  background: #eaf2ff;
+  color: #2868bd;
+}
+
+.pending-icon {
+  background: #fff4df;
+  color: #c18724;
+}
+
+.confirmed-icon {
+  background: #e8f7ef;
+  color: #25865a;
+}
+
+.rejected-icon {
+  background: #ffebeb;
+  color: #d13d3d;
+}
+
+.violation-summary-card span {
+  display: block;
+  margin-bottom: 7px;
+  color: #8191a6;
+  font-size: 12px;
+}
+
+.violation-summary-card h2 {
+  color: #173858;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/* =========================================
+   SUBMITTED REPORTS SECTION
+========================================= */
+
+.violation-records-section {
+  margin: 0 40px 35px;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e5ebf2;
+  border-radius: 13px;
+  box-shadow: 0 3px 12px rgba(20, 48, 78, 0.04);
+}
+
+.violation-records-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.violation-records-heading h2 {
+  margin-bottom: 7px;
+  color: #173858;
+  font-size: 19px;
+}
+
+.violation-records-heading p {
+  color: #8191a6;
+  font-size: 13px;
+}
+
+/* =========================================
+   SEARCH AND FILTER
+========================================= */
+
+.violation-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 22px;
+}
+
+.violation-search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 10px;
+  height: 44px;
+  min-width: 0;
+  padding: 0 14px;
+  border: 1px solid #dce4ee;
+  border-radius: 8px;
+  color: #8291a5;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.violation-search input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #263b50;
+  font-size: 13px;
+}
+
+.violation-status-filter {
+  height: 44px;
+  min-width: 155px;
+  padding: 0 13px;
+  border: 1px solid #dce4ee;
+  border-radius: 8px;
+  outline: none;
+  background: #ffffff;
+  color: #344b63;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* =========================================
+   VIOLATION TABLE
+========================================= */
+
+.violation-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #e8edf3;
+  border-radius: 9px;
+}
+
+.violation-table {
+  width: 100%;
+  min-width: 1050px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.violation-table th {
+  padding: 15px 13px;
+  background: #f5f8fc;
+  color: #60758d;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border-bottom: 1px solid #e5ebf2;
+}
+
+.violation-table td {
+  padding: 15px 13px;
+  color: #43566b;
+  font-size: 12px;
+  border-bottom: 1px solid #edf1f5;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.violation-table tbody tr:hover {
+  background: #f8faff;
+}
+
+.violation-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* =========================================
+   SEVERITY LABELS
+========================================= */
+
+.severity-label {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.severity-low {
+  background: #e8f5ed;
+  color: #23834d;
+}
+
+.severity-medium {
+  background: #fff4dc;
+  color: #b77916;
+}
+
+.severity-high {
+  background: #ffebeb;
+  color: #d13d3d;
+}
+
+/* =========================================
+   STATUS LABELS
+========================================= */
+
+.violation-status-label {
+  display: inline-block;
+  padding: 6px 11px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status-pending {
+  background: #fff4dc;
+  color: #b77916;
+}
+
+.status-confirmed {
+  background: #e8f5ed;
+  color: #23834d;
+}
+
+.status-rejected {
+  background: #ffebeb;
+  color: #d13d3d;
+}
+
+/* =========================================
+   VIEW BUTTON
+========================================= */
+
+.view-violation-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 7px;
+  background: #eaf2ff;
+  color: #2463b8;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.view-violation-button:hover {
+  background: #d8e8ff;
+}
+
+/* =========================================
+   EMPTY TABLE
+========================================= */
+
+.violation-empty-state {
+  height: 130px;
+  text-align: center !important;
+  color: #8191a6 !important;
+}
+
+.violation-empty-state svg {
+  margin-bottom: 8px;
+}
+
+.violation-empty-state p {
+  font-size: 13px;
+}
+
+/* =========================================
+   MODAL OVERLAY
+========================================= */
+
+.violation-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(12, 30, 50, 0.58);
+  overflow-y: auto;
+}
+
+.violation-modal {
+  width: 100%;
+  max-width: 700px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* =========================================
+   MODAL HEADER
+========================================= */
+
+.violation-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 25px;
+  border-bottom: 1px solid #e8edf3;
+}
+
+.violation-modal-header span {
+  color: #8191a6;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.violation-modal-header h2 {
+  margin-top: 6px;
+  color: #173858;
+  font-size: 21px;
+}
+
+.violation-modal-close {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 7px;
+  background: #f1f4f8;
+  color: #52677d;
+  cursor: pointer;
+}
+
+.violation-modal-close:hover {
+  background: #e5ebf2;
+}
+
+/* =========================================
+   MODAL BODY
+========================================= */
+
+.violation-modal-body {
+  padding: 24px 25px;
+  overflow-y: auto;
+}
+
+.violation-detail-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 23px;
+  padding: 13px 15px;
+  background: #f7f9fc;
+  border-radius: 8px;
+}
+
+.violation-detail-status > span:first-child {
+  color: #60758d;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.violation-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.violation-detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  min-width: 0;
+  padding: 14px;
+  background: #f8fafd;
+  border: 1px solid #edf1f5;
+  border-radius: 8px;
+  color: #3473b4;
+}
+
+.violation-detail-item > div {
+  min-width: 0;
+}
+
+.violation-detail-item span {
+  display: block;
+  margin-bottom: 6px;
+  color: #8191a6;
+  font-size: 11px;
+}
+
+.violation-detail-item strong {
+  display: block;
+  color: #263e57;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.violation-description-section {
+  margin-top: 22px;
+  padding: 17px;
+  background: #f8fafd;
+  border: 1px solid #edf1f5;
+  border-radius: 8px;
+}
+
+.violation-description-section h3 {
+  margin-bottom: 10px;
+  color: #173858;
+  font-size: 14px;
+}
+
+.violation-description-section p {
+  color: #52677d;
+  font-size: 13px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+/* =========================================
+   MODAL FOOTER
+========================================= */
+
+.violation-modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 18px 25px;
+  border-top: 1px solid #e8edf3;
+}
+
+.reject-violation-button,
+.confirm-violation-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 15px;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.reject-violation-button {
+  background: #d64545;
+}
+
+.reject-violation-button:hover {
+  background: #b93232;
+}
+
+.confirm-violation-button {
+  background: #218653;
+}
+
+.confirm-violation-button:hover {
+  background: #176d41;
+}
+
+.reject-violation-button:disabled,
+.confirm-violation-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.violation-already-reviewed {
+  color: #8191a6;
+  font-size: 12px;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+  .violation-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .violation-management-header {
+    padding: 25px;
+  }
+
+  .violation-summary,
+  .violation-records-section {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+/* Matches the shared admin sidebar mobile breakpoint */
+
+@media (max-width: 900px) {
+  .violation-management-main {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .violation-management-header {
+    padding: 25px 20px;
+  }
+
+  .violation-summary,
+  .violation-records-section {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .violation-management-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .violation-management-header h1 {
+    font-size: 23px;
+  }
+
+  .violation-summary {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .violation-records-section {
+    padding: 18px;
+  }
+
+  .violation-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .violation-search,
+  .violation-status-filter {
+    width: 100%;
+  }
+
+  .violation-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .violation-modal-footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .reject-violation-button,
+  .confirm-violation-button {
+    width: 100%;
+  }
+
+  .violation-notice {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

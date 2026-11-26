@@ -1,0 +1,278 @@
+.renewal-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  color: #1e293b;
+  font-family: Arial, sans-serif;
+}
+
+.renewal-header {
+  padding: 20px 5%;
+  background: #fff;
+  border-bottom: 1px solid #e5eaf1;
+}
+
+.renewal-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background: transparent;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.renewal-content {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 38px 25px;
+}
+
+.renewal-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.renewal-overline {
+  color: #2563eb;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.renewal-title h1 {
+  margin: 8px 0;
+  color: #172554;
+  font-size: 30px;
+}
+
+.renewal-title p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.renewal-title-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 68px;
+  border-radius: 18px;
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.renewal-pass-card {
+  padding: 30px;
+  margin-bottom: 25px;
+  border-radius: 17px;
+  color: #fff;
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.15);
+}
+
+.renewal-pass-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.renewal-pass-top span,
+.renewal-pass-number span {
+  color: #bfdbfe;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.renewal-pass-top h2 {
+  margin-top: 6px;
+  font-size: 21px;
+}
+
+.renewal-pass-number {
+  margin: 35px 0;
+}
+
+.renewal-pass-number h2 {
+  margin-top: 8px;
+  font-size: 27px;
+  letter-spacing: 2px;
+}
+
+.renewal-pass-details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.renewal-pass-details div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.renewal-pass-details span {
+  color: #bfdbfe;
+  font-size: 11px;
+}
+
+.renewal-pass-details strong {
+  font-size: 13px;
+}
+
+.renewal-request-card {
+  padding: 25px;
+  background: #fff;
+  border: 1px solid #e5eaf1;
+  border-radius: 14px;
+}
+
+.renewal-request-heading {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 25px;
+}
+
+.renewal-request-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 47px;
+  height: 47px;
+  border-radius: 12px;
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.renewal-request-heading h2 {
+  color: #172554;
+  font-size: 18px;
+}
+
+.renewal-request-heading p {
+  margin-top: 5px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.renewal-status {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 17px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: #f8fafc;
+  color: #2563eb;
+}
+
+.renewal-status strong {
+  color: #334155;
+  font-size: 14px;
+}
+
+.renewal-status p {
+  margin-top: 5px;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.renewal-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 9px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.renewal-submit:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.renewal-submit:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.renewal-success,
+.renewal-error {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.renewal-success {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.renewal-error {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.renewal-message {
+  padding: 40px;
+  text-align: center;
+  color: #64748b;
+  background: #fff;
+  border-radius: 12px;
+}
+
+.renewal-footer {
+  padding: 30px 0 10px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+@media (max-width: 700px) {
+  .renewal-content {
+    padding: 25px 15px;
+  }
+
+  .renewal-pass-details {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+  }
+
+  .renewal-pass-card {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 420px) {
+  .renewal-title h1 {
+    font-size: 24px;
+  }
+
+  .renewal-title-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .renewal-pass-number h2 {
+    font-size: 21px;
+  }
+}

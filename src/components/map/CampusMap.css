@@ -1,0 +1,408 @@
+/* MAP CONTAINER */
+
+.campus-map-container {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e5ebf3;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(20, 48, 78, 0.04);
+}
+
+/* MAP LEGEND */
+
+.map-legend {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-bottom: 15px;
+  padding: 15px 18px;
+  background: #ffffff;
+  border: 1px solid #e5ebf3;
+  border-radius: 10px;
+}
+
+.map-legend span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #43566b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.map-legend i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+/* LEAFLET MAP */
+
+.campus-map {
+  width: 100%;
+  height: 600px;
+  border-radius: 12px;
+  z-index: 1;
+}
+
+/* MAP MESSAGES */
+
+.map-loading,
+.map-error {
+  padding: 15px 18px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.map-loading {
+  color: #2463a5;
+  background: #eaf2ff;
+}
+
+.map-error {
+  color: #d13d3d;
+  background: #ffebeb;
+}
+
+/* POPUP CONTENT */
+
+.leaflet-popup-content {
+  min-width: 170px;
+  color: #43566b;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.leaflet-popup-content strong {
+  color: #173858;
+  font-size: 14px;
+}
+
+.leaflet-popup-content p {
+  margin: 5px 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+  .map-legend {
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .map-legend span {
+    font-size: 12px;
+  }
+
+  .campus-map {
+    height: 450px;
+  }
+}
+
+/* MAP CONTAINER */
+
+.campus-map-container {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e5ebf3;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(20, 48, 78, 0.04);
+}
+
+/* MAP LEGEND */
+
+.map-legend {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-bottom: 15px;
+  padding: 15px 18px;
+  background: #ffffff;
+  border: 1px solid #e5ebf3;
+  border-radius: 10px;
+}
+
+.map-legend span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #43566b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.map-legend i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+/* LEAFLET MAP */
+
+.campus-map {
+  width: 100%;
+  height: 600px;
+  border-radius: 12px;
+  z-index: 1;
+}
+
+/* MAP MESSAGES */
+
+.map-loading,
+.map-error {
+  padding: 15px 18px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.map-loading {
+  color: #2463a5;
+  background: #eaf2ff;
+}
+
+.map-error {
+  color: #d13d3d;
+  background: #ffebeb;
+}
+
+/* POPUP CONTENT */
+
+.leaflet-popup-content {
+  min-width: 170px;
+  color: #43566b;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.leaflet-popup-content strong {
+  color: #173858;
+  font-size: 14px;
+}
+
+.leaflet-popup-content p {
+  margin: 5px 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+  .map-legend {
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .map-legend span {
+    font-size: 12px;
+  }
+
+  .campus-map {
+    height: 450px;
+  }
+}
+
+/* MAP MARKER POPUP DETAILS */
+
+.map-popup-details {
+  min-width: 190px;
+  font-family: Arial, sans-serif;
+}
+
+.map-popup-details h3 {
+  margin: 0 0 3px;
+  color: #173858;
+  font-size: 15px;
+}
+
+.map-popup-id {
+  color: #8492a6;
+  font-size: 11px;
+}
+
+.map-popup-status {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 12px 0;
+  font-size: 12px;
+}
+
+.map-popup-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.map-popup-status-dot.available {
+  background: #16a34a;
+}
+
+.map-popup-status-dot.full {
+  background: #dc2626;
+}
+
+.map-popup-stat {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 6px 0;
+  border-bottom: 1px solid #edf1f5;
+  font-size: 12px;
+}
+
+.map-popup-stat span {
+  color: #718096;
+}
+
+.map-popup-stat strong {
+  color: #243247;
+}
+
+.map-popup-occupancy {
+  margin-top: 12px;
+}
+
+.map-popup-occupancy-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+  color: #43566b;
+  font-size: 11px;
+}
+
+.map-popup-progress {
+  width: 100%;
+  height: 7px;
+  overflow: hidden;
+  background: #e9eef5;
+  border-radius: 10px;
+}
+
+.map-popup-progress > div {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+/* RESET MAP BUTTON */
+
+.map-reset-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin-left: auto;
+  padding: 9px 12px;
+  background: #eff6ff;
+  color: #2563eb;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.map-reset-button:hover {
+  background: #dbeafe;
+  border-color: #93c5fd;
+}
+
+@media (max-width: 700px) {
+  .map-reset-button {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+/* MAP LEGEND STATUS COLORS */
+
+.map-popup-status-dot.available {
+  background: #16a34a;
+}
+
+.map-popup-status-dot.limited {
+  background: #f59e0b;
+}
+
+.map-popup-status-dot.full {
+  background: #dc2626;
+}
+
+/* ALIGN CAMPUS MAP AND PARKING AREAS */
+
+@media (min-width: 1101px) {
+  .campus-map-content {
+    grid-template-columns: minmax(0, 1fr) 320px;
+    align-items: stretch;
+  }
+
+  .campus-map-section {
+    min-height: 800px;
+    box-sizing: border-box;
+  }
+
+  .campus-parking-panel {
+    height: 800px;
+    min-height: 800px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .campus-parking-panel > .campus-section-heading,
+  .campus-parking-controls,
+  .campus-compare-button {
+    flex-shrink: 0;
+  }
+
+  .campus-parking-list {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    padding-right: 5px;
+  }
+
+  .campus-parking-list::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .campus-parking-list::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+  }
+
+  .campus-parking-list::-webkit-scrollbar-track {
+    background: #f1f5f9;
+  }
+}
+
+/* RESTORE NORMAL LAYOUT ON SMALLER SCREENS */
+
+@media (max-width: 1100px) {
+  .campus-map-section {
+    min-height: auto;
+  }
+
+  .campus-parking-panel {
+    height: auto;
+    min-height: auto;
+    overflow: visible;
+  }
+
+  .campus-parking-list {
+    max-height: none;
+    overflow-y: visible;
+  }
+}
